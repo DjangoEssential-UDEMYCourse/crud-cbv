@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+{% block content %}
+<br/>
+<br/>
+<div class="row">
+    <div class="card-panel">
+        <div class="container">
+            <form action="" method="post">
+                {% csrf_token %}
+                <p><h4>Tem Certeza que dezeja deletar o Produto: <em>{{ object }}</em></h4></p>
+                {% buttons %}
+                <button class="btn btn-danger" type="submit">Confirmar?</button>
+                <a href="{% url 'index' %}">
+                    <button class="btn btn-warning" type="button">
+                        Cancelar
+                    </button>
+                </a>
+                {% endbuttons %}
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
