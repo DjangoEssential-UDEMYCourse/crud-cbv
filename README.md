@@ -1,0 +1,4 @@
+# crud-cbv
+CRUD com CLASS BASED VIEWS  
+PAGINAÇÃO PADRAO  
+SQLITE3
