@@ -17,6 +17,7 @@
         <th scope="col">#</th>
         <th scope="col">Nome</th>
         <th scope="col">Preço</th>
+        <th scope="col">Descrição</th>
         <th scope="col">
             <div style="text-align: end;">Ação</div>
         </th>
@@ -28,6 +29,7 @@
         <td scope="row">{{ produto.id }}</td>
         <td scope="row">{{ produto.nome }}</td>
         <td scope="row">R$ {{ produto.preco|intcomma }}</td>
+        <td scope="row">{{ produto.descricao }}</td>
         <td scope="row">
             <div class="pull-right">
                 <a class="btn btn-primary " href="{% url 'update-produto' produto.pk %}">Editar</a>
